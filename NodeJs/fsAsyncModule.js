@@ -1,6 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
+console.log(process.argv);
+const n = process.argv[2]
+console.log(n);
 const folderPath = path.join(__dirname,"async");
 const filePath = path.join(folderPath, "new.txt");
 
