@@ -14,8 +14,12 @@ switch (action) {
         console.error(err);
       } else {
         fs.writeFile(filePath, "Hello, this is a new file", (err) => {
-          if (err) console.error(err);
-          else console.log("File created successfully");
+          if (err){
+            console.error(err);
+          }
+          else{
+            console.log("File created successfully");
+          }
         });
       }
     });
