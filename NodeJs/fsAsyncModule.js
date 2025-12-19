@@ -19,6 +19,13 @@ fs.mkdir(folderPath,{recursive:true},(error)=>{
         console.error(error);
     }else{
         console.log(data);
+        fs.rename(filePath,"async/rename.txt",(error)=>{
+            if(error){
+                console.log(error);
+            }else{
+                console.log("Renamed file successfully");
+            }
+        })
     }
 })
     }
